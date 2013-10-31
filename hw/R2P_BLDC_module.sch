@@ -14720,8 +14720,6 @@ http://dangerousprototypes.com</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="PTC"/>
 <part name="P+5" library="supply" deviceset="+5V" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="infineon" deviceset="OPTIMOS" device=""/>
 <part name="Q2" library="infineon" deviceset="OPTIMOS" device=""/>
 <part name="Q3" library="infineon" deviceset="OPTIMOS" device=""/>
@@ -14779,8 +14777,6 @@ http://dangerousprototypes.com</description>
 <part name="X2" library="apbteam_con-amp-micromatch" deviceset="MICROMATCH-4" device=""/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="2.7k"/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="2.7k"/>
-<part name="P+4" library="supply" deviceset="+5V" device=""/>
-<part name="P+11" library="supply" deviceset="+5V" device=""/>
 <part name="RN1" library="dp_devices" deviceset="RESISTOR_ARRAY_4" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -14881,8 +14877,6 @@ http://dangerousprototypes.com</description>
 <instance part="GND7" gate="1" x="129.54" y="198.12"/>
 <instance part="R4" gate="G$1" x="83.82" y="139.7" rot="R180"/>
 <instance part="P+5" gate="1" x="91.44" y="147.32"/>
-<instance part="C1" gate="G$1" x="99.06" y="238.76"/>
-<instance part="GND9" gate="1" x="99.06" y="231.14"/>
 <instance part="Q1" gate="G$1" x="182.88" y="228.6"/>
 <instance part="Q2" gate="G$1" x="231.14" y="228.6"/>
 <instance part="Q3" gate="G$1" x="279.4" y="228.6"/>
@@ -14960,8 +14954,6 @@ http://dangerousprototypes.com</description>
 <instance part="X2" gate="-4" x="325.12" y="55.88"/>
 <instance part="R16" gate="G$1" x="345.44" y="68.58" rot="R90"/>
 <instance part="R17" gate="G$1" x="353.06" y="68.58" rot="R90"/>
-<instance part="P+4" gate="1" x="345.44" y="78.74"/>
-<instance part="P+11" gate="1" x="353.06" y="78.74"/>
 <instance part="RN1" gate="B" x="193.04" y="40.64" rot="R90"/>
 <instance part="RN1" gate="C" x="200.66" y="40.64" rot="R90"/>
 <instance part="RN1" gate="D" x="236.22" y="35.56" rot="R90"/>
@@ -15114,10 +15106,6 @@ http://dangerousprototypes.com</description>
 <wire x1="129.54" y1="200.66" x2="129.54" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="PAD5" gate="1" pin="P"/>
 <wire x1="360.68" y1="231.14" x2="355.6" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="231.14" x2="355.6" y2="228.6" width="0.1524" layer="91"/>
@@ -15268,10 +15256,6 @@ http://dangerousprototypes.com</description>
 <pinref part="C19" gate="G$1" pin="1"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 <pinref part="C21" gate="G$1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="241.3" x2="99.06" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="243.84" x2="106.68" y2="243.84" width="0.1524" layer="91"/>
-<junction x="106.68" y="243.84"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -15682,12 +15666,6 @@ http://dangerousprototypes.com</description>
 </net>
 <net name="+V" class="0">
 <segment>
-<pinref part="PAD4" gate="1" pin="P"/>
-<pinref part="P+8" gate="1" pin="+V"/>
-<wire x1="360.68" y1="238.76" x2="355.6" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="238.76" x2="355.6" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C13" gate="G$1" pin="+"/>
 <pinref part="P+9" gate="1" pin="+V"/>
 </segment>
@@ -15726,6 +15704,12 @@ http://dangerousprototypes.com</description>
 <pinref part="Q7" gate="Q" pin="C"/>
 <pinref part="P+2" gate="1" pin="+V"/>
 <wire x1="236.22" y1="187.96" x2="236.22" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="1" pin="+V"/>
+<wire x1="355.6" y1="241.3" x2="355.6" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="PAD4" gate="1" pin="P"/>
+<wire x1="355.6" y1="238.76" x2="360.68" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GHC" class="0">
@@ -15859,21 +15843,6 @@ http://dangerousprototypes.com</description>
 <pinref part="U$11" gate="G$1" pin="IN"/>
 <junction x="91.44" y="134.62"/>
 <pinref part="U$11" gate="G$1" pin="EN"/>
-</segment>
-<segment>
-<wire x1="330.2" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
-<label x="335.28" y="58.42" size="1.778" layer="95"/>
-<pinref part="X2" gate="-3" pin="S"/>
-</segment>
-<segment>
-<wire x1="345.44" y1="73.66" x2="345.44" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<wire x1="353.06" y1="73.66" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="P+11" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="BH" class="0">
@@ -16102,6 +16071,21 @@ http://dangerousprototypes.com</description>
 <wire x1="220.98" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
 <junction x="236.22" y="175.26"/>
 <label x="215.9" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="345.44" y1="73.66" x2="345.44" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="345.44" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="76.2" x2="353.06" y2="73.66" width="0.1524" layer="91"/>
+<junction x="353.06" y="76.2"/>
+<wire x1="353.06" y1="76.2" x2="358.14" y2="76.2" width="0.1524" layer="91"/>
+<label x="358.14" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="330.2" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
+<label x="335.28" y="58.42" size="1.778" layer="95"/>
+<pinref part="X2" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="N$21" class="0">
