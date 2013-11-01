@@ -16123,6 +16123,90 @@ http://dangerousprototypes.com</description>
 <pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
+<net name="DIR" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="DIR"/>
+<wire x1="231.14" y1="157.48" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
+<label x="226.06" y="157.48" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="PWM" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PWM"/>
+<wire x1="231.14" y1="154.94" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
+<label x="226.06" y="154.94" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="COAST" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="COAST"/>
+<wire x1="231.14" y1="152.4" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
+<label x="226.06" y="152.4" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="BRAKE" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="BRAKE"/>
+<wire x1="231.14" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<label x="226.06" y="149.86" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="MODE" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="MODE"/>
+<wire x1="231.14" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
+<label x="226.06" y="144.78" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="ESF"/>
+<wire x1="231.14" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
+<label x="226.06" y="142.24" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="TACHO" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="TACHO"/>
+<wire x1="231.14" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="226.06" y="139.7" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="DIRO" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="DIRO"/>
+<wire x1="231.14" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
+<label x="226.06" y="137.16" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="CSOUT" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="CSOUT"/>
+<wire x1="231.14" y1="134.62" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
+<label x="226.06" y="134.62" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="RESET"/>
+<wire x1="231.14" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
+<label x="226.06" y="129.54" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="FF1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="FF1"/>
+<wire x1="231.14" y1="127" x2="226.06" y2="127" width="0.1524" layer="91"/>
+<label x="226.06" y="127" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="FF2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="FF2"/>
+<wire x1="231.14" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
+<label x="226.06" y="124.46" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
